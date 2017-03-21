@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- jQuery from Google -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+    <!-- Optimize for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100,400,300,700,500,900' rel='stylesheet' type='text/css'>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/questions.js"></script>
+
+    <title>QuizApp</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="mainview">
+            <header id="header">
+                <span class="menu-icon"><i class="fa fa-bars"></i></span>
+                <h1>QUIZ</h1>
+            </header>
+            <div id="content">
+                <div id="question-section">
+                        <img src="images/bulb.png">
+                        <span id="points">Points</span>
+                    <p id="question">Question</p>
+                </div>
+                <div id="answers">
+                    <button id="answer1" type="button" class="btn btn-default btn-block" onclick="checkAnswer(0);">Answer1</button>
+                    <button id="answer2" type="button" class="btn btn-default btn-block" onclick="checkAnswer(1);">Answer 2</button>
+                    <button id="answer3" type="button" class="btn btn-default btn-block" onclick="checkAnswer(2);">Answer 3</button>
+                    <button id="answer4" type="button" class="btn btn-default btn-block" onclick="checkAnswer(3);">Answer 4</button>
+                </div>
+                <div id="next-question" onclick="next();">
+                    Next Question
+                </div>
+
+            </div>
+            <footer id="footer">
+                <button type="button" class="btn btn-default btn-block" onclick="openLevelview();">Choose level</button>
+            </footer>
+        </div>
+        <div id="overlay">
+            <div id="levelview">
+                <button type="button" class="btn btn-default btn-block level1">Level 1</button>
+                <button type="button" class="btn btn-default btn-block level2">Level 2</button>
+                <button type="button" class="btn btn-default btn-block level3">Level 3</button>
+                <button type="button" class="btn btn-default btn-block levelback" onclick="closeLevelview();">Back</button>
+                        </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

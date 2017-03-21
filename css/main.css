@@ -1,0 +1,143 @@
+/* Main.css for Quizapp */
+
+body {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+button,
+header,
+footer {
+    height: 40px;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: #536d79;
+    color: white;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    z-index: 101;
+}
+
+header h1 {
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    padding: 0px;
+    position: absolute;
+    top: 0px;
+    margin: 0px;
+    color: ghostwhite;
+    z-index: 101;
+}
+
+.menu-icon {
+    background-color: #536d79;
+    border-color: #536d79;
+    margin: 10px;
+    position: absolute;
+    left: 0px;
+}
+
+#content {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    height: 100%;
+    margin-top: 40px;
+    text-align: center;
+    z-index: 99;
+}
+
+#content button {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#next-question {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin-bottom: 40px;
+    display: block;
+}
+
+#question-section {
+    background-color: #00abbf;
+    margin: 5px;
+    padding: 5px;
+    height: 180px;
+    text-align: center;
+}
+
+#answers {
+    position: relative;
+}
+
+#points {
+    font-size: 40px;
+}
+
+#mainview {
+    z-index: 98;
+}
+
+#overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    background-color: #333;
+    z-index: 102;
+    display: none;
+}
+
+#levelview {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 160px;
+    z-index: 102;
+}
+
+button {
+    text-transform: uppercase;
+    height: 40px;
+}
+
+.btn {
+    border-radius: 0px;
+    width: 100%;
+}
+
+.level1 {
+    background-color: #00abbf !important;
+}
+.level2 {
+    background-color: #4cb6aa !important;
+}
+.level3 {
+    background-color: #abd57f!important;
+}
+
+.levelback{
+        background-color: #536d79 !important;
+
+}
+
+.container {
+    padding: 0px;
+}
